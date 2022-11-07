@@ -27,12 +27,15 @@ a, label,h1, h2{
 .container-header button {
 	padding: 9px 30px;
 	border-radius: 100px;
-	background-color: #fff;
+	/*background-color: #fff;*/
+	background-color: #25DAC5;
+	color: #fff;
 	border-color: #ddd;
 	font-size: 16px;
 }
 .container-header button:hover {
-	background-color: #eee;
+	background-color: #12ffC5;
+
 }
 
 
@@ -220,12 +223,27 @@ a, label,h1, h2{
 
 
 
-@media screen and (max-width: 490px){
+@media screen and (max-width: 480px){
 
 	.container-header b{
 		font-size: 15px;
 		
 	}
+
+
+	.section-perfil{
+		padding: 10px 20px;
+	}
+
+	.section-abilities{
+		padding: 0px 20px;
+		padding-bottom: 60px;
+	}
+
+	.container-se{
+		padding: 0 20px;
+	}
+
 
 	.item-cf{
 		align-self: center;
