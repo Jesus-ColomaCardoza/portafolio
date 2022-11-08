@@ -15,7 +15,7 @@ a, label,h1, h2{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	height: 100px;
+	min-height: 100px;
 	padding: 30px 30px;
 }
 
@@ -30,7 +30,7 @@ a, label,h1, h2{
 	/*background-color: #fff;*/
 	background-color: #25DAC5;
 	color: #fff;
-	border-color: #ddd;
+	border: none;
 	font-size: 16px;
 }
 .container-header button:hover {
@@ -58,7 +58,7 @@ a, label,h1, h2{
 	font-size: 43px;
 }
 .sp-datosPersonales p{
-	padding-right: 30px;
+	
 	font-size: 22px;
 	text-align: justify;
 
@@ -70,8 +70,8 @@ a, label,h1, h2{
 
 .sp-fotoPerfil img{
 	object-fit: cover;
-	width: 370px;
-	height: 450px;
+	min-width: 370px;
+	min-height: 450px;
 	border-radius: 20px;
 
 }
@@ -224,6 +224,39 @@ a, label,h1, h2{
 
 
 @media screen and (max-width: 480px){
+	.sp-datosPersonales{
+		order: 2;
+	}
+
+
+	.sp-fotoPerfil {
+		order: 1;
+		position: relative;
+		top: -40px;
+		padding: 0px;
+		
+	}
+
+	.sp-fotoPerfil img{
+		object-fit: cover;
+		min-width: 50px;
+		min-height: 70px;
+		border-radius: 50%; /*borde 100px la apariencia es de circulo*/
+
+	}
+
+	.sp-datosPersonales {
+		padding: 10px;
+	}
+
+	.sp-datosPersonales h1{
+		font-size: 23px;
+	}
+
+	.sp-datosPersonales p{
+		font-size: 16px;
+
+	}
 
 	.container-header b{
 		font-size: 15px;
@@ -243,7 +276,6 @@ a, label,h1, h2{
 	.container-se{
 		padding: 0 20px;
 	}
-
 
 	.item-cf{
 		align-self: center;
