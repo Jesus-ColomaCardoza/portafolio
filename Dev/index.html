@@ -3,64 +3,87 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
 	<script src="https://kit.fontawesome.com/07409845ba.js" crossorigin="anonymous"></script>
-	<title>Portafolio</title>
+	<title>Portafolio Jesus Coloma Cardoza</title>
 </head>
 <body>
-	<header class="container-header">
-		<b>PortafolioJesusColoma.com</b>
-		<button>Email</button>
+	<header class="main-header">
+		<p class="main-header__title">PortafolioJesusColoma.com</p>
+		<button class="button button--green"><b>Email</b></button>
 	</header>
 
-	<section class="section-perfil">
-		<div class="sp-datosPersonales">
-			<h1>Hola, soy Hellary Jesus Coloma Cardoza. Student Engineering Informatics</h1>
-			<p>Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Commodi saepe adipisci voluptatum facilis, illo explicabo cupiditate ullam dicta deleniti nisi, mollitia unde voluptate minus dignissimos aperiam porro asperiores consequuntur rerum?</p>
-		</div>
-		<div class="sp-fotoPerfil">
-			<img src="img/jesus.jpg">			
-		</div>
+	<section class="section section--presentation">
+		<article class="article-presentation">
+			<div class="photo">
+				<img class="img article-presentation__photo" src="img/jesus.jpg">			
+			</div>
+			<div class="dates">
+				<h1 class="h1">Hola, soy Hellary Jesus Coloma Cardoza. Student Engineering Informatics</h1>
+				<p class="article-presentation__profile">Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Commodi saepe adipisci voluptatum facilis, illo explicabo cupiditate ullam dicta deleniti nisi, mollitia unde voluptate minus dignissimos aperiam porro asperiores consequuntur rerum?</p>
+			</div>
+		</article>	
 	</section>
 
-	<h2 class="sa-h2">Mis habilidades</h2>
-	<section class="section-abilities">
-		<div class="item-sa"><strong>HTML</strong><p>Conocimiento en maquetado de páginas web con html</p></div>
-		<div class="item-sa"><strong>CSS</strong><p>Conocimiento básico en aplicación de estilos CSS en páginas web</p></div>
-		<div class="item-sa"><strong>Javascript</strong><p>Conocimiento básico en javascript, nivel Junior</p></div>
+	<section class="section section--abilities">
+		<h2 class="h2">Mis habilidades</h2>
+		<ul class="list-abilities">
+			<li class="list-abilities__item">
+				<h3 class="h3">HTML</h3>
+				<p class="list-abilities__p">Conocimiento en maquetado de páginas web</p>
+			</li>
+			<li class="list-abilities__item">
+				<h3 class="h3">CSS</h3>
+				<p class="list-abilities__p">Conocimiento básico en aplicación de estilos CSS en páginas web</p>
+			</li>
+			<li class="list-abilities__item">
+				<h3 class="h3">JavaScript</h3>
+				<p class="list-abilities__p">Conocimiento básico en javascript, nivel Junior</p>
+			</li>
+		</ul>
 	</section>
 
-	<section class="section-experience">
-		<h2 class="se-h2">Mis experiencia</h2>
-		<button class="se-button"><a href="https://github.com/Jesus-ColomaCardoza">GitHub o Contacto</a></button>
-		<div class="container-se">
-			<div class="item-se">
-				<img src="img/adivina.png">
-				<a href="https://juegomemoria-coloma.netlify.app/"><b>Juego Adivina</b></a>
-				<p>Prácticando programando un juego, de adivinar con imagenes de pokemon u otros personajes</p>
-			</div>
-			<div class="item-se">
-				<img src="img/alquiler_vehiculo.png">
-				<a href=""><b>Alquiler de vehiculos</b></a>
-				<p>Curso de Programación multimedia, primer intento de programación de un CRUD de Alquiler de vehiculos</p>
-			</div>
-			<div class="item-se">
-				<img src="img/cv.png">
-				<a href="#"><b>CV</b></a>
-				<p>Proyecto en cuestión que se esta visualizando</p>
-			</div>
-		</div>
+	<section class="section section--experience">
+		<h2 class="h2">Mis experiencia</h2>
+		<button class="button button--green button--contact"><a class="link-contact" href="https://github.com/Jesus-ColomaCardoza">GitHub o Contacto</a></button>
+
+		<ul class="list-projects">
+			<li class="list-projects__item">
+				<img class="img list-projects__img" src="img/adivina.png">
+				<h3 class="h3 list-projects__h3">
+					<a class="list-projects__link" href="https://juegomemoria-coloma.netlify.app/">Juego Adivina</a>
+				</h3>
+				<p class="list-projects__p">Prácticando programando un juego, de adivinar con imagenes de pokemon u otros personajes</p>
+			</li>
+			<li class="list-projects__item">
+				<img class="img list-projects__img" src="img/alquiler_vehiculo.png">
+				<h3 class="h3 list-projects__h3">
+					<a class="list-projects__link" href="#">Alquiler de Vehiculos</a>
+				</h3>
+				<p class="list-projects__p">Curso de Programación multimedia, primer intento de programación de un CRUD de Alquiler de vehiculos</p>
+			</li>
+			<li class="list-projects__item">
+				<img class="img list-projects__img" src="img/cv.png">
+				<h3 class="h3 list-projects__h3">
+					<a class="list-projects__link" href="#">Portafolio</a>
+				</h3>
+				<p class="list-projects__p">Proyecto en cuestión que se esta visualizando</p>
+			</li>
+		</ul>
 	</section>
 
-	<footer class="container-footer">
-		<h2 class="item-cf">Si necesita más informacón: </h2>
-		<b class="item-cf">colomacardoza16@gmail.com</b>
-		<ul class="item-cf">
-			<!--usar fas fa- or fa fa for use free icons --->
-			<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-			<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-			<li><a href="https://github.com/Jesus-ColomaCardoza"><i class="fa fa-github"></i></a> </li>
+	<footer class="main-footer">
+		<h2 class="h2 main-footer__title">Si necesita más informacón: </h2>
+		<p class="main-footer__correo">
+			<b>colomacardoza16@gmail.com</b>
+		</p>
+		<ul class="list-socialnetworks">
+			<!--usar "fas fa-nombre" or "fa fa-nombre" for to use free icons --->
+			<li class="list-socialnetworks__item"><a class="list-socialnetworks__link" href="https://www.instagram.com/jesuscolomac/"><i class="fa fa-instagram"></i></a></li>
+			<li class="list-socialnetworks__item"><a class="list-socialnetworks__link" href="https://www.linkedin.com/in/jesuscolomacardoza/"><i class="fa fa-linkedin"></i></a></li>
+			<li class="list-socialnetworks__item"><a class="list-socialnetworks__link" href="https://github.com/Jesus-ColomaCardoza"><i class="fa fa-github"></i></a></li>
 		</ul>
 	</footer>
 	
