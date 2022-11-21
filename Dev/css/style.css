@@ -9,7 +9,7 @@ body{
     font-family: sans-serif;
 }
 
-.h1,.h2,.h3,.main-header__title{
+.h1,.h2,.h3,.main-header__title,.list-projects__link{
     color: #1E0E62;
 }
 .img{
@@ -28,6 +28,12 @@ body{
 .main-header__title{
     font-weight: bold;
     margin: .5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-header__title::before{
+    content: 'Portafolio';
 }
 
 .button{
@@ -88,7 +94,7 @@ body{
 }
 
 .section--experience{
-    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 .button--contact{
     display: block;
@@ -135,7 +141,7 @@ body{
 
 .main-footer__correo{
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin: 0;
 }
 
@@ -151,17 +157,19 @@ body{
     margin: 0 .5em;
 }
 
+.list-socialnetworks__link{
+    color: #4E0f72;
+}
+
 @media screen and (min-width:768px){
     .main-header__title{
         font-size: 1.6rem;
     }
 
     .article-presentation{
-        width: 70%;
         margin:0 auto;
         margin-top: 1em;
         display: flex;
-        flex-wrap: wrap;
         justify-content: center;
     }
     .dates{
@@ -180,10 +188,17 @@ body{
     }
     .list-abilities,.list-projects{
         display: flex;
-        justify-content: space-around;        
+        flex-wrap: wrap;
     }
+    .list-abilities{
+        justify-content: space-evenly;        
+    }
+    .list-projects{
+        justify-content: space-evenly;        
+    }
+
     .list-abilities__item,.list-projects__item{
-        max-width: 20em;
+        max-width: 33%;
     }
     .list-abilities__item{
         padding:1em;
@@ -197,9 +212,29 @@ body{
 
 @media screen and (min-width:960px){
     .article-presentation{
-        justify-content: space-between;
+        width: 70%;
+        justify-content: space-evenly;
     }
 }
 
+
+@media screen and (min-width:1024px){
+    .list-abilities__item,.list-projects__item{
+        max-width: 25%;
+    }
+}
+/* @media screen and (prefers-color-scheme:dark){
+    .h1,.h2,.h3,.main-header__title{
+        color: rgb(203, 162, 66);
+    }
+
+    .section--presentation,.section--abilities,.main-footer{
+        background-color: #444;
+    }
+    .main-header,.section--experience{
+        background-color: #666;
+    }
+    
+} */
 
 
