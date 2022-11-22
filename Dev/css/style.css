@@ -1,7 +1,13 @@
+:root{
+    --border-prueba:1px solid #000;
+}
+
+
 *,
 *::after,
 *::before{
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -42,9 +48,46 @@ body{
     border: none;
 }
 
-.button--green{
-    background-color: #25DAC5;
+.button--blue{
+    /* background-color: #25DAC5; */
+    background-color: #236a96;
     color: white;
+}
+
+.button-inicio{
+    position: absolute;
+    left:83%;
+    top:93%;
+    position: fixed;
+}
+
+.button-inicio__link{
+    color: #fff;
+}
+
+.main-nav{
+    background-color: #236a96;
+    position: sticky;
+    top: 0%;
+    width: 100%;
+    
+}
+
+.main-menu{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.main-menu__item:hover{
+    background-color:#1a5a83;
+}
+
+.main-menu__link{
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    padding: .3rem 1rem;
+    line-height: 3em;
 }
 
 .section{
@@ -63,8 +106,6 @@ body{
 .article-presentation__photo{
     max-width:13em ;
     border-radius: 100%;
-    position: relative;
-    top:-1em;
 }
 
 .h1{
@@ -76,12 +117,16 @@ body{
     background-color: #F1F1F1;
 }
 
+.list-abilities__item{ /*no se vean tan apretados*/
+    padding-bottom: 1rem;
+}
+
 .h2{
     font-size: 1.3rem;
     text-align: center;
 }
 
-.list-abilities,.list-projects{
+.list-abilities,.list-projects,.main-menu{
     list-style: none;
     margin-top: 0;
     margin-bottom: 0;
@@ -106,8 +151,8 @@ body{
     color: white;
 }
 
-.button--green:hover{
-    background-color: #12ffC5;
+.button--blue:hover{
+    background-color: #257aaf;
 }
 
 .list-projects__item{

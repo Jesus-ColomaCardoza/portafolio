@@ -10,12 +10,34 @@
 	<title>Portafolio Jesus Coloma Cardoza</title>
 </head>
 <body>
-	<header class="main-header">
+	<button class="button button--blue button-inicio">
+		<a class="button-inicio__link" href="#inicio"><i class="fa fa-arrow-up"></i></a>
+	</button>
+	
+	<header id="inicio" class="main-header">
 		<p class="main-header__title">JesusColoma.com</p>
-		<button class="button button--green"><b>Email</b></button>
+		<button class="button button--blue"><b>Email</b></button>
 	</header>
 
-	<section class="section section--presentation">
+	<nav class="main-nav">
+		<ul class="main-menu">
+			<li class="main-menu__item">
+				<a class="main-menu__link" href="#presentation">Inicio</a>
+			</li>
+			<li class="main-menu__item">
+				<a class="main-menu__link" href="#abilities">Habilidades</a>
+			</li>
+			<li class="main-menu__item">
+				<a class="main-menu__link" href="#experience">Experiencia</a>
+			</li>
+			<li class="main-menu__item">
+				<a class="main-menu__link" href="#contact">Contacto</a>
+			</li>
+		</ul>
+
+	</nav>
+
+	<section id="presentation" class="section section--presentation">
 		<article class="article-presentation">
 			<div class="photo">
 				<img class="img article-presentation__photo" src="img/jesus.jpg">			
@@ -27,7 +49,7 @@
 		</article>	
 	</section>
 
-	<section class="section section--abilities">
+	<section id="abilities" class="section section--abilities">
 		<h2 class="h2">Mis habilidades</h2>
 		<ul class="list-abilities">
 			<li class="list-abilities__item">
@@ -57,9 +79,9 @@
 		</ul>
 	</section>
 
-	<section class="section section--experience">
+	<section id="experience" class="section section--experience">
 		<h2 class="h2">Mis experiencia</h2>
-		<button class="button button--green button--contact"><a class="link-contact" href="https://github.com/Jesus-ColomaCardoza">GitHub o Contacto</a></button>
+		<button class="button button--blue button--contact"><a class="link-contact" href="https://github.com/Jesus-ColomaCardoza">GitHub o Contacto</a></button>
 
 		<ul class="list-projects">
 			<li class="list-projects__item">
@@ -101,7 +123,7 @@
 		</ul>
 	</section>
 
-	<footer class="main-footer">
+	<footer id="contact"  class="main-footer">
 		<h2 class="h2 main-footer__title">Si necesita más informacón: </h2>
 		<p class="main-footer__correo">
 			<b>colomacardoza16@gmail.com</b>
@@ -113,6 +135,5 @@
 			<li class="list-socialnetworks__item"><a class="list-socialnetworks__link" href="https://github.com/Jesus-ColomaCardoza"><i class="fa fa-github"></i></a></li>
 		</ul>
 	</footer>
-	
 </body>
 </html>
