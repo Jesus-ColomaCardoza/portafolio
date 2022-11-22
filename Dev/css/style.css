@@ -46,6 +46,8 @@ body{
     padding: .5em 1.5em;
     border-radius: 100px;
     border: none;
+    font-weight: bold;
+
 }
 
 .button--blue{
@@ -55,10 +57,9 @@ body{
 }
 
 .button-inicio{
-    position: absolute;
-    left:83%;
-    top:93%;
     position: fixed;
+    right: 3%;
+    bottom: 3%;
 }
 
 .button-inicio__link{
@@ -75,19 +76,26 @@ body{
 
 .main-menu{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .main-menu__item:hover{
     background-color:#1a5a83;
 }
 
+.main-menu__link,.main-menu__icon{
+    padding: .3rem 1rem;
+    line-height: 3em;
+}
+
 .main-menu__link{
     font-weight: bold;
     color: #fff;
     text-decoration: none;
-    padding: .3rem 1rem;
-    line-height: 3em;
+}
+
+.main-menu__text{
+    display: none;
 }
 
 .section{
@@ -207,6 +215,13 @@ body{
 }
 
 @media screen and (min-width:768px){
+    .main-menu__text{
+        display: inline;
+    }
+    .main-menu{
+        justify-content: space-evenly;
+    }
+
     .main-header__title{
         font-size: 1.6rem;
     }
@@ -256,6 +271,7 @@ body{
 }
 
 @media screen and (min-width:960px){
+
     .article-presentation{
         width: 70%;
         justify-content: space-evenly;
