@@ -1,3 +1,4 @@
+
 :root{
     --border-prueba:1px solid #000;
 }
@@ -25,7 +26,7 @@ body{
 .main-header{
     background-color: #fff;
     display: flex;
-    padding: 1rem 2rem;
+    padding: .5em 2em;
     justify-content: space-between;
     align-items: center;
     font-size: 1rem;
@@ -71,7 +72,8 @@ body{
     position: sticky;
     top: 0%;
     width: 100%;
-    
+    z-index: 100; 
+   
 }
 
 .main-menu{
@@ -98,8 +100,90 @@ body{
     display: none;
 }
 
+.slide{
+    padding-top: 2em;
+    display: flex;
+    justify-content: center;
+    background-color: #F1F1F1;
+}
+
+.slide__content{
+    display: flex; 
+    overflow: hidden; 
+    width: 100%;
+    height: 50vh;
+    box-shadow: 0 0 .9em .8em #aaa;
+}
+
+.slide__item{
+    min-width: 100%;
+    background-size: 100% 100%;/*adapta la imagen al contenedor pero la redimenciona(se puede deformar)*/
+    /* background-size:cover; para adaptar la imagen lo mejor posible pero la recortar*/
+
+    animation-name: slideAnimation;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function:ease-in-out;
+}
+
+.slide__item::before,.slide__item::after{
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 2s;
+}
+.slide__item::before{
+    background-color: rgba(0,0,0,.6);
+}
+.slide__item::after{
+    content:'Imagen 1';
+    font-size: 3rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide__item--scale::after,.slide__item--scale::before{
+    transform:scale(.3,.5);
+}
+
+.slide__item:hover.slide__item--scale::after,.slide__item:hover.slide__item--scale::before{
+    transform:scale(.5,.7);
+}
+
+.slide__item:nth-child(1){
+    background-image: url('https://th.bing.com/th/id/OIP.k23gZ-nfhHI1yICtdTwpGgHaFj?pid=ImgDet&rs=1');
+    border-bottom: .5em solid #236a96;
+}
+.slide__item:nth-child(2){
+    background-image: url('https://4.bp.blogspot.com/-Ib__GZ-SLzc/VksuBeCPzDI/AAAAAAAAAjk/AHMszrC6QwQ/s1600/bajar%2Bfondos%2Bde%2Bpantalla%2Banimados.jpg');
+    border-bottom: .5em solid #966223;
+}
+.slide__item:nth-child(3){
+    background-image: url('https://th.bing.com/th/id/R.18ad1ba11b9246a2ebf5978b903ab384?rik=ac1zX4X6cy%2bhoQ&riu=http%3a%2f%2fwww.solofondos.com%2fwp-content%2fuploads%2f2017%2f07%2funited-states-chicago-sunset-1920x1080.jpg&ehk=92k6eOB9E90l1cFMcx8kKmgVXLyz7pYa%2bWn7aNYkRhU%3d&risl=&pid=ImgRaw&r=0');
+    border-bottom: .5em solid #2fac6e;
+}
+
+
+
+@keyframes slideAnimation{
+    0%{
+        transform:translateX(0);
+    }
+    50%{
+        transform:translateX(-100%);
+    }
+    100%{
+        transform:translateX(-200%);
+    }
+}
+
 .section{
     padding: .5em 2em;
+    padding-top: 3em;
 }
 
 .section--presentation{
