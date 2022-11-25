@@ -162,18 +162,20 @@
 		</div>
 		<div class="container-form-contact">
 			<h2 class="h2">Contáctate con nosotros</h2>
-			<form class="form-contact">
+			<!--action:va la ruta del archivo.php 
+				method: que metodo usar para mandar o recibir informacion al servidor, tenemos POST Y GET-->
+			<form action="form-contact.php" method="post" class="form-contact">
 				<div class="form-contact__field">
 					<label class="form-contact__label">Nombres</label>
-					<input class="form-contact__input" type="text" name="name" >
+					<input class="form-contact__input" type="text" name="name" required >
 				</div>
 				<div class="form-contact__field">
 					<label class="form-contact__label">Gmail</label>
-					<input class="form-contact__input" type="email" name="gmail" >
+					<input class="form-contact__input" type="email" name="email" required>
 				</div>
 				<div class="form-contact__field">
 					<label class="form-contact__label">Comentario</label>
-					<textarea class="form-contact__input" name="coment" cols="30" rows="5"></textarea>
+					<textarea class="form-contact__input" name="coment" cols="30" rows="5" required></textarea>
 					<!-- resize="none" bloquea el redimencionamiento del textarea -->
 				</div>
 				<input class="form-contact__submit button button--blue" type="submit" value="Enviar">
