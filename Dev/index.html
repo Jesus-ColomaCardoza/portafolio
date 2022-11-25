@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 	<script src="https://kit.fontawesome.com/07409845ba.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="extras/fontawesome/fontawesome-free-6.2.1-web/css/all.css">
 	<title>Portafolio Jesus Coloma Cardoza</title>
 </head>
 <body>	
@@ -144,20 +145,87 @@
 
 
 	<footer id="contact"  class="main-footer">
-		<h2 class="h2 main-footer__title">Si necesita más informacón: </h2>
-		<p class="main-footer__correo">
-			<b>colomacardoza16@gmail.com</b>
-		</p>
-		<ul class="list-socialnetworks">
-			<!--usar "fas fa-nombre" or "fa fa-nombre" for to use free icons --->
-			<li class="list-socialnetworks__item"><a class="list-socialnetworks__link" href="https://www.instagram.com/jesuscolomac/"><i class="fa fa-facebook"></i></a></li>
-			<li class="list-socialnetworks__item"><a class="list-socialnetworks__link" href="https://www.instagram.com/jesuscolomac/"><i class="fa fa-instagram"></i></a></li>
-			<li class="list-socialnetworks__item"><a class="list-socialnetworks__link" href="https://www.instagram.com/jesuscolomac/"><i class="fa fa-whatsapp"></i></a></li>
-			<li class="list-socialnetworks__item"><a class="list-socialnetworks__link" href="https://www.linkedin.com/in/jesuscolomacardoza/"><i class="fa fa-linkedin"></i></a></li>
-			<li class="list-socialnetworks__item"><a class="list-socialnetworks__link" href="https://github.com/Jesus-ColomaCardoza"><i class="fa fa-github"></i></a></li>
-		</ul>
+		<div class="contanier-socialnetworks">
+			<h2 class="h2">Redes Sociales</h2>
+			<!-- <h2 class="h2 main-footer__title">Si necesita más informacón:</h2> -->
+			<!-- <p class="main-footer__correo">
+				<b>colomacardoza16@gmail.com</b>
+			</p> -->
+			<ul class="list-socialnetworks">
+				<!--usar "fas fa-nombre" or "fa fa-nombre" for to use free icons --->
+				<li class="list-socialnetworks__item"><a class="list-socialnetworks__link" href="https://www.instagram.com/jesuscolomac/"><i class="fa fa-facebook"></i></a></li>
+				<li class="list-socialnetworks__item"><a class="list-socialnetworks__link" href="https://www.instagram.com/jesuscolomac/"><i class="fa fa-instagram"></i></a></li>
+				<li class="list-socialnetworks__item"><a class="list-socialnetworks__link" href="https://www.instagram.com/jesuscolomac/"><i class="fa fa-whatsapp"></i></a></li>
+				<li class="list-socialnetworks__item"><a class="list-socialnetworks__link" href="https://www.linkedin.com/in/jesuscolomacardoza/"><i class="fa fa-linkedin"></i></a></li>
+				<li class="list-socialnetworks__item"><a class="list-socialnetworks__link" href="https://github.com/Jesus-ColomaCardoza"><i class="fa fa-github"></i></a></li>
+			</ul>
+		</div>
+		<div class="container-form-contact">
+			<h2 class="h2">Contáctate con nosotros</h2>
+			<form class="form-contact">
+				<div class="form-contact__field">
+					<label class="form-contact__label">Nombres</label>
+					<input class="form-contact__input" type="text" name="name" >
+				</div>
+				<div class="form-contact__field">
+					<label class="form-contact__label">Gmail</label>
+					<input class="form-contact__input" type="email" name="gmail" >
+				</div>
+				<div class="form-contact__field">
+					<label class="form-contact__label">Comentario</label>
+					<textarea class="form-contact__input" name="coment" cols="30" rows="5"></textarea>
+					<!-- resize="none" bloquea el redimencionamiento del textarea -->
+				</div>
+				<input class="form-contact__submit button button--blue" type="submit" value="Enviar">
+			</form>
+		</div>
+		<div class="container-links">
+			<h2 class="h2">Enlaces</h2>
+			<ul class="main-menu main-menu--links">
+				<li class="main-menu__item">
+					<a class="main-menu__link" href="#presentation">
+						<i class="fa fa-home main-menu__icon"></i><p class="main-menu__text">Inicio</p>
+					</a>
+				</li>
+				<li class="main-menu__item">
+					<a class="main-menu__link" href="#abilities">
+						<i class="fa fa-book main-menu__icon"></i><p class="main-menu__text">Habilidades</p>
+					</a>
+				</li>
+				<li class="main-menu__item">
+					<a class="main-menu__link" href="#experience">
+						<i class="fa fa-medal main-menu__icon"></i><p class="main-menu__text">Experiencia</p>
+					</a>
+				</li>
+				<li class="main-menu__item">
+					<a class="main-menu__link" href="#contact">
+						<i class="fa fa-address-book main-menu__icon"></i><p class="main-menu__text">Contacto</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="container-extras">
+			<div class="container-logo">
+				<img class="img logo" src="img/perro.jpg">
+			</div>
+			<ul class="list-extras">
+				<li class="list-extras__item">
+					<i class="fa fa-phone"></i>+51 932775913
+				</li>
+			</ul>
+			<ul class="list-extras">
+				<li class="list-extras__item">
+					<i class="fa fa-envelope"></i>colomacardoza16@gmail.com
+				</li>
+			</ul>
+			<ul class="list-extras">
+				<li class="list-extras__item">
+					<i class="fa fa-location-dot"></i>1716 Park Huancabamba faique 240-los peroles
+				</li>
+			</ul>
+
+		</div>
+	
 	</footer>
-
-
 </body>
 </html>
