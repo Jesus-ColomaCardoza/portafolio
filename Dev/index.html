@@ -5,14 +5,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-
 	<script src="https://kit.fontawesome.com/07409845ba.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="extras/fontawesome/fontawesome-free-6.2.1-web/css/all.css">
 	<title>Portafolio Jesus Coloma Cardoza</title>
 </head>
 <body>	
 
-	<header id="inicio" class="main-header">
+	<header class="main-header">
 		<p class="main-header__title">JesusColoma.com</p>
 		<button class="button button--blue">Email</button>
 	</header>
@@ -42,23 +41,11 @@
 		</ul>
 	</nav>
 
-	<button class="button button--blue button-inicio">
+	<button class="button button--blue button--inicio">
 		<a class="button-inicio__link" href="#inicio"><i class="fa fa-arrow-up"></i></a>
 	</button>
 
-	<section id="presentation" class="section section--presentation">
-		<article class="article-presentation">
-			<div class="photo">
-				<img class="img article-presentation__photo" src="img/jesus.jpg">			
-			</div>
-			<div class="dates">
-				<h1 class="h1">Hola, soy Hellary Jesus Coloma Cardoza. Student Engineering Informatics</h1>
-				<p class="article-presentation__profile">Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Commodi saepe adipisci voluptatum facilis, illo explicabo cupiditate ullam dicta deleniti nisi, mollitia unde voluptate minus dignissimos aperiam porro asperiores consequuntur rerum?</p>
-			</div>
-		</article>	
-	</section>
-
-	<div class="slide">
+	<div id="inicio" class="slide">
 		<div class="slide__content">
 			<div class="slide__item slide__item--scale">
 			</div>
@@ -68,6 +55,18 @@
 			</div>
 		</div>
 	</div>
+
+	<section id="presentation" class="section section--presentation">
+		<article class="article-presentation">
+			<div class="photo">
+				<img class="img article-presentation__photo" src="img/perro.jpg">			
+			</div>
+			<div class="dates">
+				<h1 class="h1">Hola, soy Hellary Jesus Coloma Cardoza. Student Engineering Informatics</h1>
+				<p class="article-presentation__profile">Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Commodi saepe adipisci voluptatum facilis, illo explicabo cupiditate ullam dicta deleniti nisi, mollitia unde voluptate minus dignissimos aperiam porro asperiores consequuntur rerum?</p>
+			</div>
+		</article>	
+	</section>
 
 	<section id="abilities"  class="section section--abilities">
 		<h2  class="h2">Mis habilidades</h2>
@@ -161,7 +160,7 @@
 			</ul>
 		</div>
 		<div class="container-form-contact">
-			<h2 class="h2">Contáctate con nosotros</h2>
+			<h2 class="h2 h2--title-form-contact">Contáctate con nosotros</h2>
 			<!--action:va la ruta del archivo.php 
 				method: que metodo usar para mandar o recibir informacion al servidor, tenemos POST Y GET-->
 			<form action="form-contact.php" method="post" class="form-contact">
@@ -227,7 +226,7 @@
 			</ul>
 
 		</div>
-	
 	</footer>
+	<script src="js/javascript.js"></script>
 </body>
 </html>
