@@ -23,40 +23,38 @@ body{
 }
 .main-header__title{
     color: #fff;
+    transition: 1.5s;
 }
 
 .main-header__title--morado{
     color: #1E0E62;
-    transition: 1s;
+    transition: 1.5s;
 }
 
 .img{
     max-width: 100%;
 }
-.main-header,.main-nav{
+.main-header{
     position: fixed;
     width: 100%;
     z-index: 100; 
-}
-
-.main-header{
     top:0;
+}
+.main-header__container{
     display: flex;
-    padding: .5em 2em;
     justify-content: space-between;
     align-items: center;
-    font-size: 1rem;
     transition: 1.5s;
 }
 
-.main-header--blanco{
+.main-header__container--blanco{
     background-color: #fff;
 }
 
 
 .main-header__title{
     font-weight: bold;
-    margin: .5rem 0;
+    margin: 1rem;
     display: flex;
     flex-wrap: wrap;
 }
@@ -79,6 +77,10 @@ body{
     color: white;
 }
 
+.button--email{
+    margin-right: 1rem;
+    transition: 1.5s;
+}
 .button--inicio{
     position: fixed;
     right: 3%;
@@ -91,11 +93,11 @@ body{
 }
 
 .main-nav{
-    top: 3.8rem;   
+    width: 100%; 
     transition: 1.5s;
 }
 
-.main-nav--azul{
+.main-nav--blue{
     background-color: #236a96;
 }
 
@@ -105,12 +107,13 @@ body{
 }
 
 .main-menu__item:hover{
-    background-color:#1a5a83;
+    background-color:rgba(0,0,0,.2);
 }
+
 
 .main-menu__link,.main-menu__icon{
     padding: .3rem 1rem;
-    line-height: 3em;
+    line-height: 3rem;
 }
 
 .main-menu__link{
@@ -145,71 +148,51 @@ body{
 }
 
 .slide{
-    display: flex;
-    justify-content: center;
-    background-color: #F1F1F1;
+    overflow: hidden;
 }
 
 .slide__content{
     display: flex; 
-    overflow: hidden; 
-    width: 100%;
+    width: 400%;
     height: 100vh;
-    box-shadow: 0 0 .9em .8em #aaa;
 }
 
 .slide__item{
-    min-width: 100%;
-    background-size: 100% 100%;/*adapta la imagen al contenedor pero la redimenciona(se puede deformar)*/
-    /* background-size:cover; para adaptar la imagen lo mejor posible pero la recortar*/
-
+    width: 100%;
     animation-name: slideAnimation;
-    animation-duration: 40s;
+    animation-duration: 100s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-timing-function:ease-in-out;
 }
 
-.slide__item::before,.slide__item::after{
-    content:'';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transition: transform 2s;
-}
-.slide__item::before{
-    background-color: rgba(0,0,0,.6);
-}
-.slide__item::after{
-    content:'Imagen 1';
-    font-size: 3rem;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.slide__item--scale::after,.slide__item--scale::before{
-    transform:scale(.3,.5);
-}
-
-.slide__item:hover.slide__item--scale::after,.slide__item:hover.slide__item--scale::before{
-    transform:scale(.5,.7);
-}
-
 .slide__item:nth-child(1){
-    background-image: url('https://th.bing.com/th/id/OIP.k23gZ-nfhHI1yICtdTwpGgHaFj?pid=ImgDet&rs=1');
     border-bottom: .5em solid #236a96;
 }
 .slide__item:nth-child(2){
-    background-image: url('https://4.bp.blogspot.com/-Ib__GZ-SLzc/VksuBeCPzDI/AAAAAAAAAjk/AHMszrC6QwQ/s1600/bajar%2Bfondos%2Bde%2Bpantalla%2Banimados.jpg');
     border-bottom: .5em solid #966223;
 }
 .slide__item:nth-child(3){
-    background-image: url('https://th.bing.com/th/id/R.18ad1ba11b9246a2ebf5978b903ab384?rik=ac1zX4X6cy%2bhoQ&riu=http%3a%2f%2fwww.solofondos.com%2fwp-content%2fuploads%2f2017%2f07%2funited-states-chicago-sunset-1920x1080.jpg&ehk=92k6eOB9E90l1cFMcx8kKmgVXLyz7pYa%2bWn7aNYkRhU%3d&risl=&pid=ImgRaw&r=0');
     border-bottom: .5em solid #2fac6e;
 }
+.slide__item:nth-child(4) > .slide__img{
+    border-bottom: .5em solid #ac2f67;
+    object-fit: fill;
+}
 
+.slide__img{
+    /* max-width-->no use porque adapta la imagen sin recortarla */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 6s;
+    /*background-size: cover;/* 100% 100% adapta la imagen al contenedor pero la redimenciona(se puede deformar)*/
+    /* background-size:cover; para adaptar la imagen lo mejor posible pero la recortar*/
+}
+
+.slide__img:hover{
+    transform: scale(1.1);
+}
 
 
 @keyframes slideAnimation{
@@ -219,14 +202,17 @@ body{
     50%{
         transform:translateX(-100%);
     }
-    100%{
+    75%{
         transform:translateX(-200%);
+    }
+    100%{
+        transform:translateX(-300%);
     }
 }
 
 .section{
     padding: .5em 2em;
-    padding-top: 3em;
+    padding-top: 6.5em;
 }
 
 .section--presentation{
@@ -405,9 +391,6 @@ textarea{
 @media screen and (min-width:768px){
     .main-menu__text{
         display: inline;
-    }
-    .main-menu{
-        justify-content: space-evenly;
     }
 
     .main-header__title{
