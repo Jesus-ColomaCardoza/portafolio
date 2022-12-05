@@ -12,7 +12,7 @@
 <body>	
 
 	<header class="main-header">
-		<div class="main-header__container .main-header__container--blanco">
+		<div class="main-header__container">
 			<p class="main-header__title">JesusColoma.com</p>
 			<button class="button button--email">Email</button>	
 		</div>
@@ -48,17 +48,33 @@
 
 	<div id="inicio" class="slide">
 		<div class="slide__content">
-			<div class="slide__item slide__item--scale">
-				<img class="slide__img" src="https://p4.wallpaperbetter.com/wallpaper/631/564/936/web-development-desk-flatdesign-wallpaper-preview.jpg">
+			<div class="slide__item">
+				<img class="slide__img slide__img--scale" src="https://p4.wallpaperbetter.com/wallpaper/631/564/936/web-development-desk-flatdesign-wallpaper-preview.jpg">
+				<div class="card">
+					<strong class="card__title">Engineering Informatics Student</strong>
+					<p class="card_paragraph">I study Engineering Informatics at the National University of Piura - UNP</p>
+				</div>
 			</div>
-			<div class="slide__item slide__item--scale">
-				<img class=" slide__img" src="https://p4.wallpaperbetter.com/wallpaper/58/507/689/code-coffee-computer-computer-screen-wallpaper-preview.jpg">
+			<div class="slide__item">
+				<img class=" slide__img slide__img--scale" src="https://midu.dev/images/wallpapers/una-taza-de-javascript.png">
+				<!-- <div class="card">
+					<strong class="card__title">Engineering Informatics Student</strong>
+					<p class="card_paragraph">I study Engineering Informatics at the National University of Piura - UNP lorem</p>
+				</div> -->
 			</div>
-			<div class="slide__item slide__item--scale">
-				<img class=" slide__img" src="https://img.freepik.com/foto-gratis/imagen-primer-plano-programador-trabajando-su-escritorio-oficina_1098-18707.jpg?w=2000">
+			<div class="slide__item">
+				<img class=" slide__img slide__img--scale" src="https://img.freepik.com/foto-gratis/imagen-primer-plano-programador-trabajando-su-escritorio-oficina_1098-18707.jpg?w=2000">
+				<!-- <div class="card">
+					<strong class="card__title">Engineering Informatics Student</strong>
+					<p class="card_paragraph">I study Engineering Informatics at the National University of Piura - UNP lorem</p>
+				</div> -->
 			</div>			
-			<div class="slide__item slide__item--scale">
-				<img class=" slide__img" src="https://midu.dev/images/wallpapers/web-technologies-4k-wallpaper.png">
+			<div class="slide__item">
+				<img class=" slide__img slide__img--scale" src="https://midu.dev/images/wallpapers/web-technologies-4k-wallpaper.png">
+				<!-- <div class="card">
+					<strong class="card__title">Engineering Informatics Student</strong>
+					<p class="card_paragraph">I study Engineering Informatics at the National University of Piura - UNP lorem</p>
+				</div> -->
 			</div>
 		</div>
 	</div>
@@ -69,7 +85,7 @@
 				<img class="img article-presentation__photo" src="img/perro.jpg">			
 			</div>
 			<div class="dates">
-				<h1 class="h1">Hola, soy Hellary Jesus Coloma Cardoza. Student Engineering Informatics</h1>
+				<h1 class="h1">Hola, soy Hellary Jesus Coloma Cardoza.</h1>
 				<p class="article-presentation__profile">Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Commodi saepe adipisci voluptatum facilis, illo explicabo cupiditate ullam dicta deleniti nisi, mollitia unde voluptate minus dignissimos aperiam porro asperiores consequuntur rerum?</p>
 			</div>
 		</article>	
@@ -149,16 +165,10 @@
 		</ul>
 	</section>
 
-
 	<footer id="contact"  class="main-footer">
 		<div class="contanier-socialnetworks">
-			<h2 class="h2">Redes Sociales</h2>
-			<!-- <h2 class="h2 main-footer__title">Si necesita más informacón:</h2> -->
-			<!-- <p class="main-footer__correo">
-				<b>colomacardoza16@gmail.com</b>
-			</p> -->
+			<h2 class="h2 h2--socialnetworks">Redes Sociales</h2>
 			<ul class="list-socialnetworks">
-				<!--usar "fas fa-nombre" or "fa fa-nombre" for to use free icons --->
 				<li class="list-socialnetworks__item"><a class="list-socialnetworks__link" href="https://www.instagram.com/jesuscolomac/"><i class="fa fa-facebook"></i></a></li>
 				<li class="list-socialnetworks__item"><a class="list-socialnetworks__link" href="https://www.instagram.com/jesuscolomac/"><i class="fa fa-instagram"></i></a></li>
 				<li class="list-socialnetworks__item"><a class="list-socialnetworks__link" href="https://www.instagram.com/jesuscolomac/"><i class="fa fa-whatsapp"></i></a></li>
@@ -167,7 +177,7 @@
 			</ul>
 		</div>
 		<div class="container-form-contact">
-			<h2 class="h2 h2--title-form-contact">Contáctate con nosotros</h2>
+			<h2 class="h2 h2--form-contact">Contáctate con nosotros</h2>
 			<!--action:va la ruta del archivo.php 
 				method: que metodo usar para mandar o recibir informacion al servidor, tenemos POST Y GET-->
 			<form action="form-contact.php" method="post" class="form-contact">
@@ -188,7 +198,7 @@
 			</form>
 		</div>
 		<div class="container-links">
-			<h2 class="h2">Enlaces</h2>
+			<h2 class="h2 h2--links">Enlaces</h2>
 			<ul class="main-menu main-menu--links">
 				<li class="main-menu__item">
 					<a class="main-menu__link" href="#presentation">

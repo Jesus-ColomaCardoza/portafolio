@@ -5,7 +5,6 @@
     --border-prueba:1px solid #000;
 }
 
-
 *,
 *::after,
 *::before{
@@ -18,8 +17,10 @@ body{
     font-family: sans-serif;
 }
 
-.h1,.h2,.h3,.list-projects__link{
-    color: #1E0E62;
+.h1,.h2,.h3,
+.main-header__title,
+.list-projects__link{
+    color: var(--azul);
 }
 .main-header__title{
     color: #fff;
@@ -130,16 +131,11 @@ body{
 .container-links{
     padding: 1em;
 }
-.main-menu--links{
-    display: inline;
-}
-.main-menu--links .main-menu__text{
+
+.main-menu--links,.main-menu--links .main-menu__text{
     display: inline;
 }
 
-.main-menu--links .main-menu__item:hover{
-    background-color:#9aa7b1;
-}
 
 .main-menu--links .main-menu__link{
     font-weight: bold;
@@ -164,37 +160,11 @@ body{
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-timing-function:ease-in-out;
-}
 
-.slide__item:nth-child(1){
-    border-bottom: .5em solid #236a96;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.slide__item:nth-child(2){
-    border-bottom: .5em solid #966223;
-}
-.slide__item:nth-child(3){
-    border-bottom: .5em solid #2fac6e;
-}
-.slide__item:nth-child(4) > .slide__img{
-    border-bottom: .5em solid #ac2f67;
-    object-fit: fill;
-}
-
-.slide__img{
-    /* max-width-->no use porque adapta la imagen sin recortarla */
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: 6s;
-    /*background-size: cover;/* 100% 100% adapta la imagen al contenedor pero la redimenciona(se puede deformar)*/
-    /* background-size:cover; para adaptar la imagen lo mejor posible pero la recortar*/
-}
-
-.slide__img:hover{
-    transform: scale(1.1);
-}
-
-
 @keyframes slideAnimation{
     0%{
         transform:translateX(0);
@@ -209,14 +179,70 @@ body{
         transform:translateX(-300%);
     }
 }
+.slide__item:nth-child(1){
+    border-bottom: .5em solid #236a96;
+}
+.slide__item:nth-child(2){
+    border-bottom: .5em solid #966223;
+}
+.slide__item:nth-child(3){
+    border-bottom: .5em solid #2fac6e;
+}
+.slide__item:nth-child(4) .slide__img{
+    border-bottom: .5em solid #ac2f67;
+    object-fit: fill;
+}
+
+.slide__img{
+    /* max-width-->no use porque adapta la imagen sin recortarla */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 6s;
+    /*background-size: cover;/* 100% 100% adapta la imagen al contenedor pero la redimenciona(se puede deformar)*/
+    /* background-size:cover; para adaptar la imagen lo mejor posible pero la recortar*/
+}
+
+.slide__img--scale:hover{
+    transform: scale(1.1);
+}
+
+.card{
+    position: absolute;
+    bottom: 5%;
+    width: 80%;
+    border-radius: 10px;
+    padding: 1em;
+    color: #fff;
+    /* background-color: rgba(12, 19, 32, 0.8); */
+    background-color: var(--azul);
+}
+.card__title{
+    font-size: 1.5rem;
+    display: block;
+    text-align: center;
+}
+
 
 .section{
     padding: .5em 2em;
-    padding-top: 6.5em;
 }
 
+.section--abilities,.section--experience{
+    padding-top: 6.5em;
+}
 .section--presentation{
-    background-color: #F1F1F1;
+    background-color: #282424;
+    padding-top: 4em;
+}
+
+
+.article-presentation{
+    background-color: #e3dfdf;
+    padding: 1em;
+    border-radius: 10px;
+    position: relative;
+    transform: translateY(20%);
 }
 
 .photo{
@@ -227,6 +253,11 @@ body{
 .article-presentation__photo{
     max-width:13em ;
     border-radius: 100%;
+    transition: 1s;
+
+}
+.article-presentation__photo:hover{
+    transform: scale(1.07);
 }
 
 .h1{
@@ -234,9 +265,6 @@ body{
     margin-top: .5rem;
 }
 
-.section--abilities{
-    background-color: #F1F1F1;
-}
 
 .list-abilities__item{ /*no se vean tan apretados*/
     padding-bottom: 1rem;
@@ -261,6 +289,8 @@ body{
 
 .section--experience{
     padding-bottom: 1.5rem;
+    background-color: #282424;
+    color: #fff;
 }
 .button--contact{
     display: block;
@@ -277,8 +307,16 @@ body{
 }
 
 .list-projects__item{
+    border-radius: 1em;
     padding: 1em;
     margin-top: 1rem;
+    transition: background-color 1s;
+}
+
+.list-projects__item:hover{
+   
+    background-color:#fff;
+    color: #000;
 }
 
 .list-projects__link{
@@ -289,25 +327,13 @@ body{
     border-radius: .5em;
 }
 
-.list-projects__item:hover{
-    border-radius: 1em;
-    background-color: #eee;
-}
-
 .main-footer{
-    padding: 3em 0;
-    background-color: #F1F1F1;
+    padding-top: 6.5em;
+    background-color: var(--azul);
+    color: #fff;
 }
-
-.main-footer__title{
-    font-size: 1.8rem;
-    margin-bottom: .5em;
-}
-
-.main-footer__correo{
-    text-align: center;
-    font-size: 1.2rem;
-    margin: 0;
+.h2--socialnetworks,.h2--form-contact,.h2--links,.main-menu__text,.main-menu__icon{
+    color: #fff;
 }
 
 .list-socialnetworks{
@@ -317,18 +343,15 @@ body{
     justify-content: center;
 }
 
-.list-socialnetworks__item{
+.list-socialnetworks__link{
     font-size: 1.5em;
     margin: 0 .5em;
+    color: #fff;
 }
 
-.list-socialnetworks__link{
-    color: #4E0f72;
-}
 
 .container-form-contact{
     padding: 1em 1.5em;
-    background-color: rgba(0,0,0,.1);
 }
 
 .form-contact__field{
@@ -361,11 +384,15 @@ textarea{
     margin: 1em auto;
     padding: .6em 0;
     border-radius: 0;
+    background-color: var(--azul-light);
+    transition: background-color .5s;
+}
+.form-contact__submit:hover{
+    background-color: #2facac;
 }
 
 .container-extras{
     padding: 1em;
-    background-color: rgba(0,0,0,.1);
 }
 .container-logo{
     width: 50%;
@@ -383,12 +410,12 @@ textarea{
 }
 
 
-
-
-
-
-
 @media screen and (min-width:768px){
+
+    .card{
+        max-width:20em;
+    }
+
     .main-menu__text{
         display: inline;
     }
@@ -454,12 +481,10 @@ textarea{
     }
     .container-extras,.container-links{
         width: 40%;
-        background-color: #F1F1F1;
     }
 }
 
 @media screen and (min-width:960px){
-
     .article-presentation{
         width: 70%;
         justify-content: space-evenly;
@@ -495,8 +520,8 @@ textarea{
         width: 20%;
         padding: 1em;
     }
-    .h2--title-form-contact{
-        padding-bottom: 1rem;
+    .h2--form-contact{
+        padding-bottom: 1em;
     }
     .container-form-contact{
         order:4;
@@ -506,19 +531,9 @@ textarea{
         padding-top: 1em;
         padding-right:2em;
     }
+    .main-footer{
+        padding-top: 1em;
+    }
 }
-/* @media screen and (prefers-color-scheme:dark){
-    .h1,.h2,.h3,.main-header__title{
-        color: rgb(203, 162, 66);
-    }
-
-    .section--presentation,.section--abilities,.main-footer{
-        background-color: #444;
-    }
-    .main-header,.section--experience{
-        background-color: #666;
-    }
-    
-} */
 
 
