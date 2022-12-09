@@ -102,29 +102,51 @@ body{
     background-color: #236a96;
 }
 
-.main-menu{
-    display: flex;
-    justify-content: center;
+.main-nav{
+    display: none;
 }
 
-.main-menu__item:hover{
+.main-menu__item:hover,.main-menu__button:hover{
     background-color:rgba(0,0,0,.2);
 }
 
-
-.main-menu__link,.main-menu__icon{
+.main-menu__link,.main-menu__icon,.main-menu__button{
     padding: .3rem 1rem;
     line-height: 3rem;
 }
 
-.main-menu__link{
+.main-menu__link, .main-menu__button{
     font-weight: bold;
     color: #fff;
     text-decoration: none;
 }
 
 .main-menu__text{
+    display: inline;
+}
+
+/*modificador de main-menu--mobile*/
+.main-nav--mobile,.main-menu__button{
+    display: block;
+}
+.main-nav--mobile .main-menu{
+    width: 100%;
+    padding: 2em 0;
+    position: absolute;
+    transform: translateX(-100%);
+    transition: background-color 1.5s,transform 1s;
+}
+.main-menu__checkbox{
     display: none;
+}
+.main-menu__button{
+    font-size: 2rem;
+}
+.main-menu__checkbox:checked + .main-menu {
+    transform: translateX(0);
+}
+.main-menu--blue{
+    background-color: var(--azul);
 }
 
 /*modificador de main-menu--links*/
@@ -411,8 +433,7 @@ textarea{
 
 
 @media screen and (min-width:768px){
-
-    .card{
+   .card{
         max-width:20em;
     }
 
@@ -485,6 +506,17 @@ textarea{
 }
 
 @media screen and (min-width:960px){
+    /*modificador de main-menu--mobile*/
+    .main-nav--mobile{
+        display: none;
+    }
+    .main-nav--desktop{
+        display: block;
+    }
+    .main-nav--desktop .main-menu{
+        display: flex;
+        justify-content: center;
+    }
     .article-presentation{
         width: 70%;
         justify-content: space-evenly;
@@ -498,7 +530,6 @@ textarea{
          width: 35%;
     }
 }
-
 
 @media screen and (min-width:1024px){
     .list-abilities__item,.list-projects__item{
