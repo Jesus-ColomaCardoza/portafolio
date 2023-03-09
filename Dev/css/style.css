@@ -1,6 +1,6 @@
 
 :root{
-    --azul:#236a96;
+    --black:#333;
     --azul-light:#257aaf;
     --border-prueba:1px solid #000;
 }
@@ -10,25 +10,26 @@
 *::before{
     box-sizing: border-box;
     scroll-behavior: smooth;
+    /* border: 1px #000 solid; */
 }
 
 body{
     margin: 0;
-    font-family: sans-serif;
+    font-family:'Times New Roman';
 }
 
 .h1,.h2,.h3,
 .main-header__title,
 .list-projects__link{
-    color: var(--azul);
+    color: var(--black);
 }
 .main-header__title{
     color: #fff;
     transition: 1.5s;
 }
 
-.main-header__title--morado{
-    color: #1E0E62;
+.main-header__title--black{
+    color: #333;
     transition: 1.5s;
 }
 
@@ -72,9 +73,9 @@ body{
 
 }
 
-.button--blue{
+.button--black{
     /* background-color: #25DAC5; */
-    background-color: #236a96;
+    background-color: var(--black);
     color: white;
 }
 
@@ -98,8 +99,8 @@ body{
     transition: 1.5s;
 }
 
-.main-nav--blue{
-    background-color: #236a96;
+.main-nav--black{
+    background-color: #333;
 }
 
 .main-nav{
@@ -145,8 +146,8 @@ body{
 .main-menu__checkbox:checked + .main-menu {
     transform: translateX(0);
 }
-.main-menu--blue{
-    background-color: var(--azul);
+.main-menu--black{
+    background-color: var(--black);
 }
 
 /*modificador de main-menu--links*/
@@ -187,7 +188,7 @@ body{
     justify-content: center;
     align-items: center;
 }
-@keyframes slideAnimation{
+/* @keyframes slideAnimation{
     0%{
         transform:translateX(0);
     }
@@ -200,12 +201,12 @@ body{
     100%{
         transform:translateX(-300%);
     }
-}
-.slide__item:nth-child(1){
-    border-bottom: .5em solid #236a96;
+} */
+/* .slide__item:nth-child(1){
+    border-bottom: .5em solid #966223;
 }
 .slide__item:nth-child(2){
-    border-bottom: .5em solid #966223;
+    border-bottom: .5em solid #236a96;
 }
 .slide__item:nth-child(3){
     border-bottom: .5em solid #2fac6e;
@@ -213,7 +214,7 @@ body{
 .slide__item:nth-child(4) .slide__img{
     border-bottom: .5em solid #ac2f67;
     object-fit: fill;
-}
+} */
 
 .slide__img{
     /* max-width-->no use porque adapta la imagen sin recortarla */
@@ -231,18 +232,14 @@ body{
 
 .card{
     position: absolute;
-    bottom: 5%;
-    width: 80%;
+    top: 40%;
+    left: 10%;
     border-radius: 10px;
     padding: 1em;
     color: #fff;
     /* background-color: rgba(12, 19, 32, 0.8); */
-    background-color: var(--azul);
-}
-.card__title{
-    font-size: 1.5rem;
-    display: block;
-    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
 }
 
 
@@ -254,14 +251,13 @@ body{
     padding-top: 6.5em;
 }
 .section--presentation{
-    background-color: #282424;
-    padding-top: 4em;
+    background-color: var(--black);
+    padding-top: 1em;
 }
 
-
 .article-presentation{
-    background-color: #e3dfdf;
-    padding: 1em;
+    background-color: #fff;
+    padding: 1em 1.5em;
     border-radius: 10px;
     position: relative;
     transform: translateY(20%);
@@ -288,9 +284,6 @@ body{
 }
 
 
-.list-abilities__item{ /*no se vean tan apretados*/
-    padding-bottom: 1rem;
-}
 
 .h2{
     font-size: 1.3rem;
@@ -304,9 +297,25 @@ body{
     padding-left: 0;
 }
 
+.list-abilities{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: .5em;
+}
+.list-abilities__item{
+    width: 25%;
+    margin-bottom: 2em;
+}
+.list-abilities__img{
+    max-width: 100%;/*imagenes autoajustables*/
+}
+
 .h3{
-    font-size: 1.1rem;
+    margin: 0;
+    font-size: 1rem;
     text-align: center;
+
 }
 
 .section--experience{
@@ -324,7 +333,7 @@ body{
     color: white;
 }
 
-.button--blue:hover{
+.button--black:hover{
     background-color: #257aaf;
 }
 
@@ -351,7 +360,7 @@ body{
 
 .main-footer{
     padding-top: 6.5em;
-    background-color: var(--azul);
+    background-color: var(--black);
     color: #fff;
 }
 .h2--socialnetworks,.h2--form-contact,.h2--links,.main-menu__text,.main-menu__icon{
@@ -392,7 +401,7 @@ body{
     padding: .4em;   
     outline: none;
     border: none;
-    border-bottom: .3em solid var(--azul);
+    border-bottom: .3em solid var(--black);
 }
 .form-contact__input:focus{
     border-bottom: .3em solid #2facac;

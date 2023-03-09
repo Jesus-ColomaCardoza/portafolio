@@ -6,16 +6,16 @@ window.addEventListener("scroll",function(){
     let nav=document.querySelectorAll(".main-nav");
     let arrayNav=Array.from(nav);
     arrayNav.map((a)=>{
-        a.classList.toggle("main-nav--blue",window.scrollY>0);
+        a.classList.toggle("main-nav--black",window.scrollY>0);
     });
 
     let menu=document.querySelector(".main-nav--mobile .main-menu");
-    menu.classList.toggle("main-menu--blue",window.scrollY>0);
+    menu.classList.toggle("main-menu--black",window.scrollY>0);
     
     let titleh=document.querySelector(".main-header__title");
-    titleh.classList.toggle("main-header__title--morado",window.scrollY>0);
+    titleh.classList.toggle("main-header__title--black",window.scrollY>0);
 
     let buttonG=document.querySelector(".button--email");
-    buttonG.classList.toggle("button--blue",window.scrollY>0);
+    buttonG.classList.toggle("button--black",window.scrollY>0);
 
 });
