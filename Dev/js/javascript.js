@@ -9,8 +9,6 @@ window.addEventListener("scroll",function(){
         a.classList.toggle("main-nav--black",window.scrollY>0);
     });
 
-    let menu=document.querySelector(".main-nav--mobile .main-menu");
-    menu.classList.toggle("main-menu--black",window.scrollY>0);
     
     let titleh=document.querySelector(".main-header__title");
     titleh.classList.toggle("main-header__title--black",window.scrollY>0);

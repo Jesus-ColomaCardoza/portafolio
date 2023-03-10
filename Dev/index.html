@@ -76,8 +76,17 @@
 		<div class="slide__content">
 			<div class="slide__item">
 				<img class="slide__img slide__img--scale" src="img/fondo.jpg">
-				<div class="card"> Hi , I'm Jesus <br> Web developer 
+				<div class="card"> 
+					<p class="card__tittle">Hi , I'm Jesus <br> Web developer </p>
+					<ul class="list-socialnetworks list-socialnetworks--black">
+						<li class="list-socialnetworks__item"><a class="list-socialnetworks__link" href="https://www.instagram.com/jesuscolomac/"><i class="fa fa-facebook"></i></a></li>
+						<li class="list-socialnetworks__item"><a class="list-socialnetworks__link" href="https://www.instagram.com/jesuscolomac/"><i class="fa fa-instagram"></i></a></li>
+						<li class="list-socialnetworks__item"><a class="list-socialnetworks__link" href="https://www.instagram.com/jesuscolomac/"><i class="fa fa-whatsapp"></i></a></li>
+						<li class="list-socialnetworks__item"><a class="list-socialnetworks__link" href="https://www.linkedin.com/in/jesuscolomacardoza/"><i class="fa fa-linkedin"></i></a></li>
+						<li class="list-socialnetworks__item"><a class="list-socialnetworks__link" href="https://github.com/Jesus-ColomaCardoza"><i class="fa fa-github"></i></a></li>
+					</ul>
 				</div>
+				
 			</div>
 			<div class="slide__item">
 				<img class=" slide__img slide__img--scale" src="https://midu.dev/images/wallpapers/una-taza-de-javascript.png">
@@ -106,10 +115,10 @@
 	<section id="presentation" class="section section--presentation">
 		<article class="article-presentation">
 			<div class="photo">
-				<img class="img article-presentation__photo" src="img/perro.jpg">			
+				<img class="img article-presentation__photo" src="img/jesus.jpg">			
 			</div>
 			<div class="dates">
-				<h1 class="h1">Hola, soy Hellary Jesus Coloma Cardoza.</h1>
+				<h1 class="h1">Hello, I'm Hellary Jesus Coloma Cardoza.</h1>
 				<p class="article-presentation__profile">
 					I'm a Informatics engineering student, I study at the National University of Piura in Peru, I really like web development , especially Frontend, I like learninig new stuff and I can quickly adapt to my work environment. Between my soft skills I can highlight:
 					<ul>
@@ -170,43 +179,23 @@
 
 	<section id="experience" class="section section--experience">
 		<h2 class="h2">Mis experiencia</h2>
-		<button class="button button--blue button--contact"><a class="link-contact" href="https://github.com/Jesus-ColomaCardoza">GitHub o Contacto</a></button>
+		<a class="button button--green button--contact" href="https://github.com/Jesus-ColomaCardoza">GitHub o Contacto</a>
 
 		<ul class="list-projects">
 			<li class="list-projects__item">
 				<img class="img list-projects__img" src="img/adivina.png">
-				<h3 class="h3 list-projects__h3">
-					<a class="list-projects__link" href="https://juegomemoria-coloma.netlify.app/">Juego Adivina</a>
-				</h3>
+				<a class="list-projects__link" href="https://juegomemoria-coloma.netlify.app/">Juego Adivina</a>
 				<p class="list-projects__p">Prácticando programando un juego, de adivinar con imagenes de pokemon u otros personajes</p>
 			</li>
 			<li class="list-projects__item">
 				<img class="img list-projects__img" src="img/alquiler_vehiculo.png">
-				<h3 class="h3 list-projects__h3">
-					<a class="list-projects__link" href="#">Alquiler de Vehiculos</a>
-				</h3>
+				<a class="list-projects__link" href="#">Alquiler de Vehiculos</a>
 				<p class="list-projects__p">Curso de Programación multimedia, primer intento de programación de un CRUD de Alquiler de vehiculos</p>
 			</li>
 			<li class="list-projects__item">
 				<img class="img list-projects__img" src="img/cv.png">
-				<h3 class="h3 list-projects__h3">
-					<a class="list-projects__link" href="#">Portafolio</a>
-				</h3>
+				<a class="list-projects__link" href="#">Portafolio</a>
 				<p class="list-projects__p">Proyecto en cuestión que se esta visualizando</p>
-			</li>
-			<li class="list-projects__item">
-				<img class="img list-projects__img" src="img/adivina.png">
-				<h3 class="h3 list-projects__h3">
-					<a class="list-projects__link" href="https://juegomemoria-coloma.netlify.app/">Juego Adivina</a>
-				</h3>
-				<p class="list-projects__p">Prácticando programando un juego, de adivinar con imagenes de pokemon u otros personajes</p>
-			</li>
-			<li class="list-projects__item">
-				<img class="img list-projects__img" src="img/alquiler_vehiculo.png">
-				<h3 class="h3 list-projects__h3">
-					<a class="list-projects__link" href="#">Alquiler de Vehiculos</a>
-				</h3>
-				<p class="list-projects__p">Curso de Programación multimedia, primer intento de programación de un CRUD de Alquiler de vehiculos</p>
 			</li>
 			
 		</ul>
@@ -229,19 +218,19 @@
 				method: que metodo usar para mandar o recibir informacion al servidor, tenemos POST Y GET-->
 			<form action="form-contact.php" method="post" class="form-contact">
 				<div class="form-contact__field">
-					<label class="form-contact__label">Nombres</label>
+					<label class="form-contact__label">Name</label>
 					<input class="form-contact__input" type="text" name="name" required >
 				</div>
 				<div class="form-contact__field">
-					<label class="form-contact__label">Gmail</label>
+					<label class="form-contact__label">Email</label>
 					<input class="form-contact__input" type="email" name="email" required>
 				</div>
 				<div class="form-contact__field">
-					<label class="form-contact__label">Comentario</label>
+					<label class="form-contact__label">Coments</label>
 					<textarea class="form-contact__input" name="coment" cols="30" rows="5" required></textarea>
 					<!-- resize="none" bloquea el redimencionamiento del textarea -->
 				</div>
-				<input class="form-contact__submit button button--blue" type="submit" value="Enviar">
+				<input class="form-contact__submit button button--green" type="submit" value="Enviar">
 			</form>
 		</div>
 		<div class="container-links">
@@ -271,7 +260,7 @@
 		</div>
 		<div class="container-extras">
 			<div class="container-logo">
-				<img class="img logo" src="img/perro.jpg">
+				<img class="img logo" src="img/jesus.jpg">
 			</div>
 			<ul class="list-extras">
 				<li class="list-extras__item">
