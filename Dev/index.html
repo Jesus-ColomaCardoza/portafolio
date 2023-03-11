@@ -121,6 +121,7 @@
 				<h1 class="h1">Hello, I'm Hellary Jesus Coloma Cardoza.</h1>
 				<p class="article-presentation__profile">
 					I'm a Informatics engineering student, I study at the National University of Piura in Peru, I really like web development , especially Frontend, I like learninig new stuff and I can quickly adapt to my work environment. Between my soft skills I can highlight:
+				</p>
 					<ul>
 						<li>Teamwork</li>
 						<li>Responsible</li>
@@ -129,7 +130,6 @@
 						<li>Respectful</li>
 						<li>Problem Resolution</li>
 					</ul>
-				</p>
 			</div>
 		</article>	
 	</section>
@@ -201,6 +201,34 @@
 		</ul>
 	</section>
 
+	<section id="contactMe" class="section section--contactMe">
+		
+		<div class="container-contactMe">
+			<div class="container-contactMe__item">
+				<img class="img left__img" src="https://th.bing.com/th/id/OIP.Zu1FNB4JBybZfYsOuZjq7AHaEK?pid=ImgDet&rs=1" alt="">
+			</div>
+			<!--action:va la ruta del archivo.php 
+				method: que metodo usar para mandar o recibir informacion al servidor, tenemos POST Y GET-->
+			<form action="form-contact.php" method="post" class="form-contact container-contactMe__item">
+				<h2 class="h2 h2--form-contact">Contact me</h2>
+				<div class="form-contact__field">
+					<label class="form-contact__label">Full Name</label>
+					<input class="form-contact__input" type="text" name="name" required placeholder="Enter your full name">
+				</div>
+				<div class="form-contact__field">
+					<label class="form-contact__label">Email</label>
+					<input class="form-contact__input" type="email" name="email" required placeholder="Enter your email">
+				</div>
+				<div class="form-contact__field">
+					<label class="form-contact__label">Coments</label>
+					<textarea class="form-contact__input" name="coment" cols="30" rows="5" required placeholder="Write a coment"></textarea>
+					<!-- resize="none" bloquea el redimencionamiento del textarea -->
+				</div>
+				<input class="form-contact__submit button button--green" type="submit" value="Enviar">
+			</form>
+		</div>
+	</section>
+
 	<footer id="contact"  class="main-footer">
 		<div class="contanier-socialnetworks">
 			<h2 class="h2 h2--socialnetworks">Redes Sociales</h2>
@@ -211,27 +239,6 @@
 				<li class="list-socialnetworks__item"><a class="list-socialnetworks__link" href="https://www.linkedin.com/in/jesuscolomacardoza/"><i class="fa fa-linkedin"></i></a></li>
 				<li class="list-socialnetworks__item"><a class="list-socialnetworks__link" href="https://github.com/Jesus-ColomaCardoza"><i class="fa fa-github"></i></a></li>
 			</ul>
-		</div>
-		<div class="container-form-contact">
-			<h2 class="h2 h2--form-contact">Contáctate con nosotros</h2>
-			<!--action:va la ruta del archivo.php 
-				method: que metodo usar para mandar o recibir informacion al servidor, tenemos POST Y GET-->
-			<form action="form-contact.php" method="post" class="form-contact">
-				<div class="form-contact__field">
-					<label class="form-contact__label">Name</label>
-					<input class="form-contact__input" type="text" name="name" required >
-				</div>
-				<div class="form-contact__field">
-					<label class="form-contact__label">Email</label>
-					<input class="form-contact__input" type="email" name="email" required>
-				</div>
-				<div class="form-contact__field">
-					<label class="form-contact__label">Coments</label>
-					<textarea class="form-contact__input" name="coment" cols="30" rows="5" required></textarea>
-					<!-- resize="none" bloquea el redimencionamiento del textarea -->
-				</div>
-				<input class="form-contact__submit button button--green" type="submit" value="Enviar">
-			</form>
 		</div>
 		<div class="container-links">
 			<h2 class="h2 h2--links">Enlaces</h2>
