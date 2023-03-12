@@ -25,7 +25,8 @@ body{
 }
 .preloader__container{
     position: absolute;
-    background-color: var(--fondo-black);
+    background-image: url('../img/fondo-preloader.png');
+    background-size: cover;
     color: #fff;
     height: 100vh;
     width: 100%;
@@ -34,20 +35,21 @@ body{
 }
 .preloader{
     margin: auto;
-    width: 50%;
-    height: 2em;
-    border:1px solid #268282;
-    background-color: var(--black);
+    width: 5em;
+    height: 5em;
+    /* border:1px solid #268282; */
     position: relative;
+    animation: grow-shrink 1s 3;
+
 }
-.preloader::before{
+/* .preloader::before{
     content: '';
     position: absolute;
     width: 0%;
     height: 100%;
     background-color: var(--green-hover);
-    animation: preloader 1s forwards;
-}
+    animation: preloader 3s forwards;
+} */
 .preloader__text{
     position: relative;
     text-align: center;
@@ -58,6 +60,13 @@ body{
 @keyframes preloader {
     100%{
         width: 100%;
+    }
+}
+
+@keyframes grow-shrink {
+    50%{
+        width: 6em;
+        height: 6em;
     }
 }
 .close{

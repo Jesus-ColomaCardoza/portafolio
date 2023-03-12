@@ -1,4 +1,4 @@
-
+//header
 window.addEventListener("scroll",function(){
     let header=document.querySelector(".main-header__container");
     header.classList.toggle("main-header__container--blanco",window.scrollY>0);
@@ -18,9 +18,10 @@ window.addEventListener("scroll",function(){
 
 });
 
+//preloader
 const preloaderContainer=document.getElementById('preloader__container');
 const body=document.getElementById('body');
 setTimeout(()=>{
     preloaderContainer.classList.add('close')
     body.classList.add('show-overflowy')
-},1000);
+},3000);
