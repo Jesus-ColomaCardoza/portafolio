@@ -3,6 +3,7 @@
     --black-hover:rgba(0,0,0,.2);
     --green:#2facac;
     --green-hover:#268282;
+    --fondo-black:#282424;/*black 2*/
     --border-prueba:1px solid #000;
 }
 
@@ -17,7 +18,53 @@
 body{
     margin: 0;
     font-family:'Times New Roman';
+    overflow-y: hidden;
 }
+.show-overflowy{
+    overflow-y: scroll;
+}
+.preloader__container{
+    position: absolute;
+    background-color: var(--fondo-black);
+    color: #fff;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    z-index: 200;  
+}
+.preloader{
+    margin: auto;
+    width: 50%;
+    height: 2em;
+    border:1px solid #268282;
+    background-color: var(--black);
+    position: relative;
+}
+.preloader::before{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color: var(--green-hover);
+    animation: preloader 1s forwards;
+}
+.preloader__text{
+    position: relative;
+    text-align: center;
+    margin: 0;
+    line-height: 1em;
+    font-size: 1.5rem; 
+}
+@keyframes preloader {
+    100%{
+        width: 100%;
+    }
+}
+.close{
+    transform: translateY(-100%);
+    transition: all 1s;
+}
+
 
 
 .main-header__title{

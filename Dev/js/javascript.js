@@ -17,3 +17,10 @@ window.addEventListener("scroll",function(){
     buttonG.classList.toggle("button--black",window.scrollY>0);
 
 });
+
+const preloaderContainer=document.getElementById('preloader__container');
+const body=document.getElementById('body');
+setTimeout(()=>{
+    preloaderContainer.classList.add('close')
+    body.classList.add('show-overflowy')
+},1000);
