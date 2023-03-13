@@ -8,8 +8,7 @@ window.addEventListener("scroll",function(){
     arrayNav.map((a)=>{
         a.classList.toggle("main-nav--black",window.scrollY>0);
     });
-
-    
+  
     let titleh=document.querySelector(".main-header__title");
     titleh.classList.toggle("main-header__title--black",window.scrollY>0);
 
