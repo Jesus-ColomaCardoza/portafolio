@@ -13,7 +13,7 @@
     scroll-behavior: smooth;
     /* border: 1px #000 solid; */
 }
-body{
+.body{
     margin: 0;
     font-family:'Times New Roman';
     overflow-y: hidden;
