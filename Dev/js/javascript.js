@@ -24,3 +24,14 @@ setTimeout(()=>{
     preloaderContainer.classList.add('close')
     body.classList.add('show-overflowy')
 },3000);
+
+
+//menu
+const mainNav=document.getElementById('main-nav');
+const mainMenuNav=document.getElementById('main-menu--nav')
+mainNav.addEventListener('click',(e)=>{
+    if (e.target.classList.contains('button-bars') ||e.target.classList.contains('main-menu__text')) {
+        mainMenuNav.classList.toggle('main-menu--show')
+    }
+    
+})

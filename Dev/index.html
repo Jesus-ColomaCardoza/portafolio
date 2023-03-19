@@ -23,54 +23,32 @@
 			<p class="main-header__title">JesusColoma.com</p>
 			<button class="button button--email">Email</button>	
 		</div>
-		<nav class="main-nav main-nav--desktop">
-			<ul class="main-menu">
+		<nav class="main-nav" id="main-nav">
+			<i class="fa-solid fa-bars main-menu__icon button-bars"></i>
+			<ul class="main-menu main-menu--nav" id="main-menu--nav">
 				<li class="main-menu__item">
-					<a class="main-menu__link" href="#presentation">
-						<i class="fa fa-home main-menu__icon"></i><p class="main-menu__text">Inicio</p>
+					<a class="main-menu__link" href="#aboutMe">
+						<i class="fa fa-home main-menu__icon"></i><p class="main-menu__text">About me</p>
 					</a>
 				</li>
 				<li class="main-menu__item">
-					<a class="main-menu__link" href="#abilities">
-						<i class="fa fa-book main-menu__icon"></i><p class="main-menu__text">Habilidades</p>
+					<a class="main-menu__link" href="#skills">
+						<i class="fa fa-book main-menu__icon"></i><p class="main-menu__text">Skills</p>
 					</a>
 				</li>
 				<li class="main-menu__item">
-					<a class="main-menu__link" href="#experience">
-						<i class="fa fa-medal main-menu__icon"></i><p class="main-menu__text">Experiencia</p>
+					<a class="main-menu__link" href="#projects">
+						<i class="fa fa-medal main-menu__icon"></i><p class="main-menu__text">Projects</p>
 					</a>
 				</li>
 				<li class="main-menu__item">
-					<a class="main-menu__link" href="#contact">
-						<i class="fa fa-address-book main-menu__icon"></i><p class="main-menu__text">Contacto</p>
-					</a>
-				</li>
-			</ul>
-		</nav>
-		<nav class="main-nav main-nav--mobile">
-			<label for="main-menu-button" class="main-menu__button">
-				<i class="fa-solid fa-bars"></i>
-			</label>
-			<input type="checkbox" name="" id="main-menu-button"  class="main-menu__checkbox" >
-			<ul class="main-menu">
-				<li class="main-menu__item">
-					<a class="main-menu__link" href="#presentation">
-						<i class="fa fa-home main-menu__icon"></i><p class="main-menu__text">Inicio</p>
-					</a>
-				</li>
-				<li class="main-menu__item">
-					<a class="main-menu__link" href="#abilities">
-						<i class="fa fa-book main-menu__icon"></i><p class="main-menu__text">Habilidades</p>
-					</a>
-				</li>
-				<li class="main-menu__item">
-					<a class="main-menu__link" href="#experience">
-						<i class="fa fa-medal main-menu__icon"></i><p class="main-menu__text">Experiencia</p>
+					<a class="main-menu__link" href="#contactMe">
+						<i class="fa fa-address-book main-menu__icon"></i><p class="main-menu__text">Contact me</p>
 					</a>
 				</li>
 				<li class="main-menu__item">
 					<a class="main-menu__link" href="#contact">
-						<i class="fa fa-address-book main-menu__icon"></i><p class="main-menu__text">Contacto</p>
+						<i class="fa fa-address-book main-menu__icon"></i><p class="main-menu__text">Extras</p>
 					</a>
 				</li>
 			</ul>
@@ -119,14 +97,14 @@
 		</div>
 	</div>
 
-	<section id="presentation" class="section section--presentation">
-		<article class="article-presentation">
-			<div class="photo">
-				<img class="img article-presentation__photo" src="img/jesus.jpg">			
+	<section id="aboutMe" class="section section--aboutMe">
+		<article class="aboutMe">
+			<div class="aboutMe__container-photo">
+				<img class="img aboutMe__photo" src="img/jesus.jpg">			
 			</div>
-			<div class="dates">
+			<div class="aboutMe__container-dates">
 				<h1 class="h1">Hello, I'm Hellary Jesus Coloma Cardoza.</h1>
-				<p class="article-presentation__profile">
+				<p class="aboutMe__dates">
 					I'm a Informatics engineering student, I study at the National University of Piura in Peru, I really like web development , especially Frontend, I like learninig new stuff and I can quickly adapt to my work environment. Between my soft skills I can highlight:
 				</p>
 					<ul>
@@ -141,53 +119,51 @@
 		</article>	
 	</section>
 
-	<section id="abilities"  class="section section--abilities">
+	<section id="skills"  class="section section--skills">
 		<h2  class="h2">Skills</h2>
-		<ul class="list-abilities">
-			<li class="list-abilities__item">
+		<ul class="list-skills">
+			<li class="list-skills__item">
 				<h3 class="h3">HTML</h3>
-				<img class="list-abilities__img" src="img/html.png"></img>
+				<img class="img" src="img/html.png"></img>
 			</li>
-			<li class="list-abilities__item">
+			<li class="list-skills__item">
 				<h3 class="h3">CSS</h3>
-				<img class="list-abilities__img" src="img/css.png"></img>
+				<img class="img" src="img/css.png"></img>
 			</li>
-			<li class="list-abilities__item">
+			<li class="list-skills__item">
 				<h3 class="h3">Javascript</h3>
-				<img class="list-abilities__img" src="img/js.png"></img>
+				<img class="img" src="img/js.png"></img>
 			</li>
-			<li class="list-abilities__item">
+			<li class="list-skills__item">
 				<h3 class="h3">Git</h3>
-				<img class="list-abilities__img" src="img/git.png"></img>
+				<img class="img" src="img/git.png"></img>
 			</li>
-			<li class="list-abilities__item">
+			<li class="list-skills__item">
 				<h3 class="h3">GitHub</h3>
-				<img class="list-abilities__img" src="img/github.png"></img>
+				<img class="img" src="img/github.png"></img>
 			</li>
-			<li class="list-abilities__item">
+			<li class="list-skills__item">
 				<h3 class="h3">Java</h3>
-				<img class="list-abilities__img" src="img/java.png"></img>
+				<img class="img" src="img/java.png"></img>
 			</li>
-			<li class="list-abilities__item">
+			<li class="list-skills__item">
 				<h3 class="h3">MySQL</h3>
-				<img class="list-abilities__img" src="img/mysql.png"></img>
+				<img class="img" src="img/mysql.png"></img>
 			</li>
-			<li class="list-abilities__item">
+			<li class="list-skills__item">
 				<h3 class="h3">PostgreSQL</h3>
-				<img class="list-abilities__img" src="img/postgresql.png"></img>
+				<img class="img" src="img/postgresql.png"></img>
 			</li>
-			<li class="list-abilities__item">
+			<li class="list-skills__item">
 				<h3 class="h3">SQLsever</h3>
-				<img class="list-abilities__img" src="img/sqlserver.png"></img>
+				<img class="img" src="img/sqlserver.png"></img>
 			</li>
-			
 		</ul>
 	</section>
 
-	<section id="experience" class="section section--experience">
-		<h2 class="h2">Mis experiencia</h2>
-		<a class="button button--green button--contact" href="https://github.com/Jesus-ColomaCardoza">GitHub o Contacto</a>
-
+	<section id="projects" class="section section--projects">
+		<h2 class="h2">My Projects</h2>
+		<a class="button button--green button--contact" href="https://github.com/Jesus-ColomaCardoza">GitHub repository</a>
 		<ul class="list-projects">
 			<li class="list-projects__item">
 				<img class="img list-projects__img" src="img/adivina.png">
@@ -209,7 +185,6 @@
 	</section>
 
 	<section id="contactMe" class="section section--contactMe">
-		
 		<div class="container-contactMe">
 			<div class="container-contactMe__item">
 				<img class="img left__img" src="https://th.bing.com/th/id/OIP.Zu1FNB4JBybZfYsOuZjq7AHaEK?pid=ImgDet&rs=1" alt="">
@@ -231,14 +206,14 @@
 					<textarea class="form-contact__input" name="coment" cols="30" rows="5" required placeholder="Write a coment"></textarea>
 					<!-- resize="none" bloquea el redimencionamiento del textarea -->
 				</div>
-				<input class="form-contact__submit button button--green" type="submit" value="Enviar">
+				<input class="form-contact__submit button button--green" type="submit" value="Send">
 			</form>
 		</div>
 	</section>
 
 	<footer id="contact"  class="main-footer">
 		<div class="contanier-socialnetworks">
-			<h2 class="h2 h2--socialnetworks">Redes Sociales</h2>
+			<h2 class="h2">Social Networks</h2>
 			<ul class="list-socialnetworks">
 				<li class="list-socialnetworks__item"><a class="list-socialnetworks__link" href="https://www.instagram.com/jesuscolomac/"><i class="fa fa-facebook"></i></a></li>
 				<li class="list-socialnetworks__item"><a class="list-socialnetworks__link" href="https://www.instagram.com/jesuscolomac/"><i class="fa fa-instagram"></i></a></li>
@@ -248,26 +223,31 @@
 			</ul>
 		</div>
 		<div class="container-links">
-			<h2 class="h2 h2--links">Enlaces</h2>
-			<ul class="main-menu main-menu--links">
+			<h2 class="h2">Links</h2>
+			<ul class="main-menu main-menu--footer">
 				<li class="main-menu__item">
-					<a class="main-menu__link" href="#presentation">
-						<i class="fa fa-home main-menu__icon"></i><p class="main-menu__text">Inicio</p>
+					<a class="main-menu__link" href="#aboutMe">
+						<i class="fa fa-home main-menu__icon"></i><p class="main-menu__text">About me</p>
 					</a>
 				</li>
 				<li class="main-menu__item">
-					<a class="main-menu__link" href="#abilities">
-						<i class="fa fa-book main-menu__icon"></i><p class="main-menu__text">Habilidades</p>
+					<a class="main-menu__link" href="#skills">
+						<i class="fa fa-book main-menu__icon"></i><p class="main-menu__text">Skills</p>
 					</a>
 				</li>
 				<li class="main-menu__item">
-					<a class="main-menu__link" href="#experience">
-						<i class="fa fa-medal main-menu__icon"></i><p class="main-menu__text">Experiencia</p>
+					<a class="main-menu__link" href="#projects">
+						<i class="fa fa-medal main-menu__icon"></i><p class="main-menu__text">Projects</p>
+					</a>
+				</li>
+				<li class="main-menu__item">
+					<a class="main-menu__link" href="#contactMe">
+						<i class="fa fa-address-book main-menu__icon"></i><p class="main-menu__text">Contact Me</p>
 					</a>
 				</li>
 				<li class="main-menu__item">
 					<a class="main-menu__link" href="#contact">
-						<i class="fa fa-address-book main-menu__icon"></i><p class="main-menu__text">Contacto</p>
+						<i class="fa fa-address-book main-menu__icon"></i><p class="main-menu__text">Extras</p>
 					</a>
 				</li>
 			</ul>
@@ -280,13 +260,9 @@
 				<li class="list-extras__item">
 					<i class="fa fa-phone"></i>+51 932775913
 				</li>
-			</ul>
-			<ul class="list-extras">
 				<li class="list-extras__item">
 					<i class="fa fa-envelope"></i>colomacardoza16@gmail.com
 				</li>
-			</ul>
-			<ul class="list-extras">
 				<li class="list-extras__item">
 					<i class="fa fa-location-dot"></i>1716 Park Huancabamba faique 240-los peroles
 				</li>
