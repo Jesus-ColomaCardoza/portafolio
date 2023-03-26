@@ -3,7 +3,7 @@
     --black-hover:rgba(0,0,0,.2);
     --green:#268282;
     --green-hover:#2facac;
-    --fondo-black:#282424;/*black 2*/
+    --fondo-black:#282424;
     --fondo-white:#fff;
     --border-prueba:1px solid #000;
 }
@@ -49,30 +49,10 @@
         height: 6em;
     }
 }
-.close{
+.hide{
     transform: translateY(-100%);
     transition: all 1s;
 }
-/* .preloader::before{
-    content: '';
-    position: absolute;
-    width: 0%;
-    height: 100%;
-    background-color: var(--green-hover);
-    animation: preloader 3s forwards;
-}
-.preloader__text{
-    position: relative;
-    text-align: center;
-    margin: 0;
-    line-height: 1em;
-    font-size: 1.5rem; 
-}
-@keyframes preloader {
-    100%{
-        width: 100%;
-    }
-}*/
 
 /* Main Header */
 .main-header{
@@ -184,11 +164,6 @@
 .main-menu--show{
     transform: translateX(0);
 }
-.main-menu--footer{
-    background-color: none;/*Correguir*/
-}
-
-
 
 .main-menu__item:hover{
     background-color:var(--black-hover);
@@ -292,21 +267,20 @@
 .section{
     padding: .5em 2em;
 }
-.section--skills,.section--projects{
+.section--skills,.section--projects,.section--contactMe{
     padding-top: 8em;
 }
 .section--aboutMe{
-    background-color: #282424;
     padding-top: 1em;
+}
+.section--aboutMe,.section--projects,.section--contactMe{
+    background-color: var(--fondo-black);
 }
 .section--projects{
     padding-bottom: 1.5rem;
-    background-color: #282424;/*black 2*/
     color: #fff;
 }
 .section--contactMe{
-    background-color: #282424;
-    padding-top: 8em;
     padding-bottom: 2em;
 }
 /*-------------------------------------------------*/
@@ -331,7 +305,7 @@
 .aboutMe__photo:hover{
     transform: scale(1.07);
 }
-
+/*-------------------------------------------------*/
 
 /*section skills----------------------------------------*/
 
@@ -352,7 +326,7 @@
     margin-bottom: 2em;
 }
 
-/* section projects-----------------------------------------------*/
+/*section projects-----------------------------------------------*/
 
 .list-projects__item{
     padding: 1em;
@@ -395,7 +369,7 @@
     resize: none;
 }
 .form-contact__input:focus{
-    background-color: #282424;
+    background-color: var(--fondo-black);
     border-bottom: .3em solid var(--green-hover);
 }
 .form-contact__submit{
@@ -443,7 +417,6 @@
 .list-extras__item i{
     margin-right: .5em;
 }
-
 
 @media screen and (min-width:480px){
     .button--contact{
@@ -517,7 +490,19 @@
 
 @media screen and (min-width:960px){
     /*modificador de main-menu*/
-
+    .button-bars{
+        display: none !important;
+    }
+    .main-menu--nav{
+        display: flex;
+        justify-content: center;
+        height: auto;
+        transform: translateX(0);
+        background-color: transparent;
+    }
+    .main-menu--black{
+        background-color:var(--black);
+    }
 }
 
 @media screen and (min-width:1024px){
@@ -548,7 +533,6 @@
     }
     .container-contactMe__item{
         width: 35%;
-        
     }
 
     .container-extras{
