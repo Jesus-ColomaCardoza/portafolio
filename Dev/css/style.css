@@ -28,7 +28,7 @@
 /* Preloader */
 .preloader__container{
     position: absolute;
-    background-image: url('../img/fondo-preloader.png');
+    background-image: url('../img/backgrounds/fondo-preloader.png');
     background-size: cover;
     color: #fff;
     height: 100vh;
@@ -112,9 +112,10 @@
     border: none;
     font-weight: bold;
 }
-.button--email{
+.button--cv{
     margin-right: 1rem;
     transition: 1.5s;
+
 }
 .button--inicio{
     position: fixed;
