@@ -264,6 +264,47 @@
     border-radius: 10px;
 }
 
+/* span animation */
+
+.typing{
+    white-space: nowrap;
+    overflow: hidden;  
+    display: none;
+
+}
+.typing--12{
+    display: block;  
+    width: 12ch;
+
+    animation: typing 5s steps(12),
+    blink--withborderwhite .5s  12 step-end alternate;
+}
+.typing--13{
+    display: block;
+    width: 13ch;
+    border-right: .1em solid;
+
+    animation: typing 5s steps(13),
+    blink--withoutborderwhite .5s infinite step-end alternate;
+}
+
+@keyframes typing{
+    from {width: 0;}
+}
+
+@keyframes blink--withborderwhite{
+    50%{
+        border-color: transparent;
+        border-right: .1em solid;
+    }
+}
+@keyframes blink--withoutborderwhite{
+    50%{
+        border-color: transparent;
+    }
+}
+/* ------------------- */
+
 /*Sections----------------------------------------*/
 .section{
     padding: .5em 2em;
