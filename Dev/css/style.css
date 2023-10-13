@@ -299,7 +299,6 @@
     text-align: center;
 }
 .aboutMe__photo{
-    margin: 0 auto;
     border-radius: 100%;
     transition: 1s;
 }
@@ -330,9 +329,15 @@
 /*section projects-----------------------------------------------*/
 
 .list-projects__item{
-    padding: 1em;
     margin-top: 1rem;
     background-color:var(--black);   
+    border-radius: .5em;
+    overflow: hidden;
+    transition: .5s all;
+}
+.list-projects__item:hover{
+    transform: scale(.95);
+
 }
 .list-projects__link{
     text-decoration: none;
@@ -340,7 +345,13 @@
     display: block;
     text-align: center;
     font-weight: bold;
-    margin-top: .5em;
+    padding:.5em;
+}
+.list-projects__p{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    border-bottom: .5em solid var(--green);
 }
 /*-----------------------------------------------*/
 
