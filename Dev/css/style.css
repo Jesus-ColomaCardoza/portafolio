@@ -229,7 +229,6 @@
     line-height: 3rem;
     color: #fff;
 }
-
 .main-menu__link {
     display: block;
     padding: 0;
@@ -712,6 +711,7 @@
     }
 
     .main-menu--nav {
+        width: 100%;
         display: flex;
         justify-content: center;
         height: auto;
@@ -721,6 +721,19 @@
 
     .main-menu--black {
         background-color: var(--black);
+    }
+
+    .main-menu__link{
+        padding: 0 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-menu__icon{
+        padding:0 .5em 0 0 ;
+    }
+    .main-menu__text{
+        margin: 0;
     }
 }
 
