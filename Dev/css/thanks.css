@@ -1,0 +1,29 @@
+:root {
+    --black: #333;
+    --black-hover: rgba(0, 0, 0, .2);
+    --green: #268282;
+    --green-hover: #2facac;
+    --fondo-black: #282424;
+    --fondo-white: #fff;
+    --border-prueba: 1px solid #000;
+}
+
+img{
+    max-width: 100%;
+}
+.container-thank{
+    /* background-color: var(--fondo-black); */
+    background-image:url('../img/backgrounds/fondo-preloader.png');
+    min-height: 100vh;
+}
+.message{
+    margin: 0;
+    padding: 2em;
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--green);
+}
+.container-image{
+    margin: 0 auto;
+    width: 45%;
+}

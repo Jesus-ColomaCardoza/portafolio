@@ -212,18 +212,16 @@
 
 .main-menu--nav {
     position: absolute;
+    width: 50%;
     height: 100vh;
     transition: 1s;
-    transform: translateX(-100%);
+    transform: translatex(-100%);
 }
 
 .main-menu--show {
     transform: translateX(0);
 }
 
-.main-menu__item:hover {
-    background-color: var(--black-hover);
-}
 
 .main-menu__link,
 .main-menu__icon {
@@ -233,7 +231,13 @@
 }
 
 .main-menu__link {
+    display: block;
+    padding: 0;
     text-decoration: none;
+}
+
+.main-menu__link:hover {
+    background-color: var(--black-hover);
 }
 
 .main-menu__text {
@@ -430,7 +434,7 @@
 
 .aboutMe__photo {
     object-fit: cover;
-    transform: scale(1);
+    transform: scale(.8);
     transition: 1s;
 }
 
