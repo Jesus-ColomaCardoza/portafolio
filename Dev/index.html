@@ -4,11 +4,21 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- css stylesheet -->
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- icons -->
 	<script src="https://kit.fontawesome.com/07409845ba.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="extras/fontawesome/fontawesome-free-6.2.1-web/css/all.css">
 
+	<!-- font: raleway -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+
+	<!-- meta data -->
 	<meta name="description" content="I'm a Informatics engineering student, I study at the National University of Piura in Peru, I really like web development, especially Frontend, I like learninig new stuff and I can quickly adapt to my work environment. Between my soft skills I can highlight:
 	">
 	<meta name="author" content="Hellary Jesus Coloma Cardoza">
@@ -37,7 +47,7 @@
 			</button>
 		</div>
 		<nav class="main-nav" id="main-nav">
-			<i class="fa-solid fa-bars main-menu__icon button-bars"></i>
+			<i class="fa-solid fa-bars main-menu__icon main-menu__icon--bars button-bars"></i>
 			<ul class="main-menu main-menu--nav" id="main-menu--nav">
 				<li class="main-menu__item">
 					<a class="main-menu__link" href="#aboutMe">
@@ -132,26 +142,30 @@
 				<img class="img aboutMe__photo" src="img/jesus.jpg">
 				<div class="custom-border custom-border--tl"></div>
 				<div class="custom-border custom-border--br"></div>
+				<a class="btn button--green" href="#">Download CV</a>
 			</div>
 			<div class="aboutMe__container-dates">
-				<h1 class="h1">Hello, I'm Hellary Jesus Coloma Cardoza.</h1>
+				<p class="p">Hello, I'm <br> Hellary Jesus Coloma Cardoza.</p>
+				<h1 class="h1">Web Developer</h1>
 				<p class="aboutMe__dates">
-					I'm a Informatics engineering student, I study at the National University of Piura in Peru, I really like web development, especially Frontend, I like learninig new stuff and I can quickly adapt to my work environment. Between my soft skills I can highlight:
+					I'm a Informatics engineering student, I study at the National University of Piura in Peru, I really
+					like web development, especially Frontend, I like learninig new stuff and I can quickly adapt to my
+					work environment. Between my soft skills I can highlight:
 				</p>
-				<ul>
-					<li>Teamwork</li>
-					<li>Responsible</li>
-					<li>Proactive</li>
-					<li>Persistent</li>
-					<li>Respectful</li>
-					<li>Problem Resolution</li>
+				<ul class="list-softSkills">
+					<li class="list-softSkills__item">&#9733; Teamwork</li>
+					<li class="list-softSkills__item">&#9733; Responsible</li>
+					<li class="list-softSkills__item">&#9733; Proactive</li>
+					<li class="list-softSkills__item">&#9733; Persistent</li>
+					<li class="list-softSkills__item">&#9733; Respectful</li>
+					<li class="list-softSkills__item">&#9733; Problem Resolution</li>
 				</ul>
 			</div>
 		</article>
 	</section>
 
 	<section id="skills" class="section section--skills">
-		<h2 class="h2">Skills</h2>
+		<h2 class="h2 text--green">Skills</h2>
 		<ul class="list-skills">
 			<li class="list-skills__item">
 				<h3 class="list-skills__title">HTML</h3>
@@ -197,7 +211,7 @@
 				<h3 class="list-skills__title">GitHub</h3>
 				<img class="img" src="img/skills/github.png"></img>
 			</li>
-			
+
 
 		</ul>
 	</section>
@@ -205,7 +219,8 @@
 	<section id="projects" class="section section--projects">
 		<h2 class="h2">My Projects</h2>
 		<div class="button--contact__container">
-			<a class="button button--green button--contact" href="https://github.com/Jesus-ColomaCardoza">GitHub repository</a>
+			<a class="button button--green button--contact" href="https://github.com/Jesus-ColomaCardoza">GitHub
+				repository</a>
 		</div>
 		<ul class="list-projects">
 			<li class="list-projects__item">
@@ -269,9 +284,8 @@
 				<img class="img left__img"
 					src="https://th.bing.com/th/id/OIP.Zu1FNB4JBybZfYsOuZjq7AHaEK?pid=ImgDet&rs=1" alt="">
 			</div>
-			<!--action:va la ruta del archivo.php 
-				method: que metodo usar para mandar o recibir informacion al servidor, tenemos POST Y GET-->
-			<form action="https://formsubmit.co/colomacardoza16@gmail.com" method="post" class="form-contact container-contactMe__item">
+			<form action="https://formsubmit.co/colomacardoza16@gmail.com" method="post"
+				class="form-contact container-contactMe__item">
 				<h2 class="h2 h2--form-contact">Contact me</h2>
 				<div class="form-contact__field">
 					<label class="form-contact__label">Full Name</label>
@@ -334,7 +348,7 @@
 				</li>
 				<li class="main-menu__item">
 					<a class="main-menu__link" href="#contactMe">
-						<i class="fa fa-address-book main-menu__icon"></i>
+						<i class="fa fa-envelope main-menu__icon"></i>
 						<p class="main-menu__text">Contact Me</p>
 					</a>
 				</li>
