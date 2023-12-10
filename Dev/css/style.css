@@ -20,6 +20,11 @@
     margin: 0;
 }
 
+.p--black {
+    font-weight: bold;
+    color: #aaa;
+}
+
 .body {
     margin: 0;
     font-family: 'Raleway', sans-serif;
@@ -134,8 +139,9 @@
 /*Titless----------------------------------------*/
 
 .h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin: 0rem;
+    position: relative;
 }
 
 .h2 {
@@ -231,7 +237,12 @@
     padding: 1em;
 }
 
+.main-menu__text {
+    display: inline;
+}
+
 .main-menu__link {
+    position: relative;
     display: block;
     padding: .8em 1em;
     text-decoration: none;
@@ -240,10 +251,6 @@
 
 .main-menu__link:hover {
     background-color: var(--green);
-}
-
-.main-menu__text {
-    display: inline;
 }
 
 /*-----------------------------------------------*/
@@ -520,11 +527,14 @@
 
 /*section contactMe-------------------------------*/
 .container-contactMe {
-    padding: 1em 1.5em;
+    /* padding: 1em 1.5em; */
     background-color: var(--black);
     color: var(--green);
 }
 
+.form-contact{
+    padding: 1em;
+}
 .form-contact__field {
     margin: 1.5em 0;
 }
@@ -560,6 +570,9 @@
 
 .left__img {
     filter: brightness(1.5);
+    width: 100%;
+    height: 10em;
+    object-fit: cover;
 }
 
 /*-----------------------------------------------*/
@@ -695,12 +708,11 @@
     }
 
     .container-contactMe__item {
-        width: 49%;
+        width: 50%;
     }
 
     .left__img {
         height: 100%;
-        object-fit: cover;
     }
 
     .main-footer {
@@ -731,6 +743,39 @@
         background-color: transparent;
     }
 
+    .main-menu__link::after,
+    .main-menu__link::before {
+        content: '';
+        height: 14px;
+        width: 14px;
+        position: absolute;
+        transition: all .35s ease;
+        opacity: 0;
+    }
+
+    .main-menu__link::before {
+        content: '';
+        right: .5em;
+        top: .5em;
+        border-top: 3px solid var(--green-hover);
+        border-right: 3px solid var(--green);
+        transform: translate(-100%, 50%);
+    }
+
+    .main-menu__link::after {
+        content: '';
+        left: .5em;
+        bottom: .5em;
+        border-bottom: 3px solid var(--green);
+        border-left: 3px solid var(--green-hover);
+        transform: translate(100%, -50%)
+    }
+
+    .main-menu__link:hover::after,
+    .main-menu__link:hover::before {
+        transform: translate(0,0);
+        opacity: 1;
+    }
 
     .list-skills {
         padding: 0 15em;
@@ -763,7 +808,7 @@
 }
 
 @media screen and (min-width:1024px) {
-    .aboutMe {
+    .aboutMe,.container-contactMe {
         width: 70%;
     }
 
@@ -773,6 +818,16 @@
 
     .list-projects__item {
         width: 30%;
+    }
+
+    .container-contactMe{
+        margin: 0 auto;
+    }
+    .container-contactMe__item:first-child {
+        width: 40%;
+    }
+    .container-contactMe__item:nth-child(2) {
+        width: 60%;
     }
 
     .container-extras {

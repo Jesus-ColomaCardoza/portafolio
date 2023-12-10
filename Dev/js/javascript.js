@@ -1,7 +1,6 @@
 const mainHeader = document.querySelector('.main-header');
 const mainNav = document.getElementById('main-nav');
 const mainMenuNav = document.getElementById('main-menu--nav')
-
 const preloaderContainer = document.getElementById('preloader__container');
 const body = document.getElementById('body');
 const typing12 = document.getElementById('typing1');
