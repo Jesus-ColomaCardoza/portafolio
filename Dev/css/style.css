@@ -850,13 +850,4 @@
     .list-skills {
         padding: 0 25em;
     }
-
-    .container-contactMe {
-        justify-content: center;
-        gap: 1em;
-    }
-
-    .container-contactMe__item {
-        width: 35%;
-    }
 }
